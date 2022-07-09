@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:supabase_example/counter/counter.dart';
 import 'package:supabase_example/l10n/l10n.dart';
+import 'package:user_repository/user_repository.dart';
 
 class App extends StatelessWidget {
-  const App({super.key});
+  const App(this.userRepository, {super.key});
+  final UserRepository userRepository;
 
   @override
   Widget build(BuildContext context) {
