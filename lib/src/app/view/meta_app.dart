@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:supabase_example/counter/counter.dart';
-import 'package:supabase_example/l10n/l10n.dart';
 import 'package:user_repository/user_repository.dart';
+
+import '../../src.dart';
 
 class App extends StatelessWidget {
   const App(this.userRepository, {super.key});

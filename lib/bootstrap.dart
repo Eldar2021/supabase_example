@@ -9,9 +9,10 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:supabase_auth_client/supabase_auth_client.dart';
 import 'package:supabase_database_client/supabase_database_client.dart';
-import 'package:supabase_example/app/view/meta_app.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:user_repository/user_repository.dart';
+
+import 'src/src.dart';
 
 class AppBlocObserver extends BlocObserver {
   @override
