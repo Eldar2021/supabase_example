@@ -33,7 +33,7 @@ Future<void> bootstrap() async {
   };
 
   WidgetsFlutterBinding.ensureInitialized();
-  await dotenv.load(fileName: 'assets/.env');
+  await dotenv.load(fileName: 'assets/env.env');
 
   await Supabase.initialize(
     url: dotenv.get('SUPABASE_URL'),
