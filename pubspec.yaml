@@ -7,14 +7,18 @@ environment:
   sdk: ">=2.17.0 <3.0.0"
 
 dependencies:
+  email_launcher:
+    path: packages/email_launcher
   equatable: ^2.0.3
   flow_builder: ^0.0.9
   flutter:
-    sdk: flutter
+    sdk: flutter 
   flutter_bloc: ^8.0.1
   flutter_dotenv: ^5.0.2
   flutter_localizations:
     sdk: flutter
+  form_inputs:
+    path: packages/form_inputs   
   intl: ^0.17.0
   supabase_auth_client:
     path: packages/supabase_auth_client
