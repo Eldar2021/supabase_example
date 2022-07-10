@@ -9,7 +9,7 @@ import 'package:url_launcher/url_launcher.dart';
 typedef FBFU = Future<bool> Function(Uri uri);
 
 class EmailLauncher {
-  const EmailLauncher(FBFU? launchUrlProvider, FBFU? canLaunchUrlProvider)
+  const EmailLauncher({FBFU? launchUrlProvider, FBFU? canLaunchUrlProvider})
       : _launchUrlProvider = launchUrlProvider ?? launchUrl,
         _canLaunchUrlProvider = canLaunchUrlProvider ?? canLaunchUrl;
 
