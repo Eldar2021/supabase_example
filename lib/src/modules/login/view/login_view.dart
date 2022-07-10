@@ -7,10 +7,14 @@ class LoginView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('LoginView'),
+        title: const Text('Sign In'),
       ),
-      body: const Center(
-        child: Text('LoginView'),
+      body: ListView(
+        padding: const EdgeInsets.symmetric(
+          vertical: 50,
+          horizontal: 32,
+        ),
+        // children: const [],
       ),
     );
   }
