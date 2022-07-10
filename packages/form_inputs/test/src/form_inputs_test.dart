@@ -5,7 +5,7 @@ import 'package:form_inputs/form_inputs.dart';
 void main() {
   group('FormInputs', () {
     test('can be instantiated', () {
-      expect(FormInputs(), isNotNull);
+      expect(CompanyName.pure(), isNotNull);
     });
   });
 }

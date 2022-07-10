@@ -1,7 +1,7 @@
 // ignore_for_file: public_member_api_docs
 
 import 'package:android_intent_plus/android_intent.dart';
-import 'package:email_launcher/exceptions/exception.dart';
+import 'package:email_launcher/email_launcher.dart';
 import 'package:flutter/foundation.dart';
 import 'package:platform/platform.dart';
 import 'package:url_launcher/url_launcher.dart';
