@@ -15,6 +15,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.1.0"
+  android_intent_plus:
+    dependency: transitive
+    description:
+      name: android_intent_plus
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.1.1"
   args:
     dependency: transitive
     description:
@@ -106,6 +113,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.4.1"
+  email_launcher:
+    dependency: "direct main"
+    description:
+      path: "packages/email_launcher"
+      relative: true
+    source: path
+    version: "1.0.0+1"
   equatable:
     dependency: "direct main"
     description:
@@ -175,6 +189,20 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  form_inputs:
+    dependency: "direct main"
+    description:
+      path: "packages/form_inputs"
+      relative: true
+    source: path
+    version: "1.0.0+1"
+  formz:
+    dependency: transitive
+    description:
+      name: formz
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.5.0-dev.1"
   frontend_server_client:
     dependency: transitive
     description:

@@ -1,6 +1,6 @@
 library form_inputs;
 
-export 'package:form_inputs/form_inputs.dart';
+export 'package:formz/formz.dart';
 
 export 'src/company_name.dart';
 export 'src/email.dart';
