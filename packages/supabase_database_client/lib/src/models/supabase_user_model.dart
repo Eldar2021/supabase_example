@@ -24,6 +24,12 @@ class SupabaseUser extends Equatable {
     };
   }
 
+  static const SupabaseUser empty = SupabaseUser(
+    id: '',
+    userName: '',
+    companyName: '',
+  );
+
   final String? id;
   final String userName;
   final String companyName;
