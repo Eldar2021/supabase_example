@@ -4,7 +4,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../../src.dart';
 
-class AuthStateSupabase<T extends StatefulWidget> extends SupabaseAuthState {
+class AuthStateSupabase<T extends StatefulWidget> extends SupabaseAuthState<T> {
   @override
   void onAuthenticated(Session session) {
     if (mounted) context.read<AppBloc>().add(AppAuthenticatedEvent());
