@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:supabase_example/src/app/app.dart';
+import 'package:supabase_example/src/modules/modules.dart';
 
 typedef _LPD = List<Page<dynamic>>;
 
@@ -7,8 +8,8 @@ typedef _LPD = List<Page<dynamic>>;
 _LPD onGenerateAppViewPages(AppStatus status, _LPD pages) {
   switch (status) {
     case AppStatus.authenticated:
-      return [];
+      return [AccountPage.page()];
     case AppStatus.unauthenticated:
-      return [];
+      return [LoginPage.page()];
   }
 }

@@ -7,6 +7,7 @@ import 'account_view.dart';
 
 class AccountPage extends StatelessWidget {
   const AccountPage({super.key});
+  static Page<void> page() => const MaterialPage<void>(child: AccountPage());
 
   @override
   Widget build(BuildContext context) {
