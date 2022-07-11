@@ -33,3 +33,5 @@ class AccountCompanyNameChangeEvent extends AccountEvent {
   @override
   List<Object> get props => [companyName];
 }
+
+class AccountSignOutEvent extends AccountEvent {}
