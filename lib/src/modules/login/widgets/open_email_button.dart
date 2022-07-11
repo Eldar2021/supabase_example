@@ -13,11 +13,14 @@ class OpenEmailButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final state = context.watch<LoginBloc>().state;
-    return OutlinedButton(
-      // ignore: lines_longer_than_80_chars
-      onPressed: state.status.isInProgress || !state.valid ? null : _emailLauncher.launchEmailApp,
-      child: const Text('open email button'),
+    return BlocBuilder<LoginBloc, LoginState>(
+      builder: (context, state) {
+        return OutlinedButton(
+          // ignore: lines_longer_than_80_chars
+          onPressed: state.status.isInProgress ? null : () async => _emailLauncher.launchEmailApp(),
+          child: const Text('open email button'),
+        );
+      },
     );
   }
 }

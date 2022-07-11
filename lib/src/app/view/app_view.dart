@@ -34,7 +34,7 @@ class _AppViewState extends AuthStateSupabase<AppView> {
       ],
       supportedLocales: AppLocalizations.supportedLocales,
       home: FlowBuilder<AppStatus>(
-        state: context.select((AppBloc bloc) => bloc.state.status),
+        state: context.watch<AppBloc>().state.status,
         onGeneratePages: onGenerateAppViewPages,
       ),
     );

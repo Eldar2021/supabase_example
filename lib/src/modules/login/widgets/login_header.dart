@@ -22,15 +22,15 @@ class LoginHeader extends StatelessWidget {
               height: 100,
               child: Assets.images.vgv.image(),
             ),
-            Padding(
-              padding: const EdgeInsets.only(top: 100),
-              child: Text(
-                'Sign in via the magic link',
-                style: Theme.of(context).textTheme.headline5,
-              ),
-            )
           ],
-        )
+        ),
+        Padding(
+          padding: const EdgeInsets.only(top: 100),
+          child: Text(
+            'Sign in via the magic link',
+            style: Theme.of(context).textTheme.headline5,
+          ),
+        ),
       ],
     );
   }

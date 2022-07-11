@@ -10,15 +10,23 @@ class SendEmailButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final state = context.watch<LoginBloc>().state;
-    return ElevatedButton(
-      key: const Key('loginView_sendEmail_button'),
-      onPressed: state.status.isInProgress || !state.valid
-          ? null
-          : () => context.read<LoginBloc>().add(
-                LoginSubmittedEvent(email: state.email.value, isWeb: kIsWeb),
-              ),
-      child: Text(state.status.isInProgress ? 'Loading' : 'Send Magic link'),
+    return BlocBuilder<LoginBloc, LoginState>(
+      builder: (context, state) {
+        return ElevatedButton(
+          key: const Key('loginView_sendEmail_button'),
+          onPressed: state.status.isInProgress
+              ? null
+              : () => context.read<LoginBloc>().add(
+                    LoginSubmittedEvent(
+                      email: state.email.value,
+                      isWeb: kIsWeb,
+                    ),
+                  ),
+          child: Text(
+            state.status.isInProgress ? 'Loading' : 'Send Magic link',
+          ),
+        );
+      },
     );
   }
 }

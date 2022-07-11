@@ -29,11 +29,11 @@ class AppBlocObserver extends BlocObserver {
 }
 
 Future<void> bootstrap() async {
+  WidgetsFlutterBinding.ensureInitialized();
   FlutterError.onError = (details) {
     log(details.exceptionAsString(), stackTrace: details.stack);
   };
 
-  WidgetsFlutterBinding.ensureInitialized();
   await dotenv.load(fileName: 'assets/env.env');
 
   await Supabase.initialize(

@@ -7,7 +7,9 @@ import '../../src.dart';
 class AuthStateSupabase<T extends StatefulWidget> extends SupabaseAuthState<T> {
   @override
   void onAuthenticated(Session session) {
-    if (mounted) context.read<AppBloc>().add(AppAuthenticatedEvent());
+    if (mounted) {
+      context.read<AppBloc>().add(AppAuthenticatedEvent());
+    }
   }
 
   @override
@@ -18,6 +20,8 @@ class AuthStateSupabase<T extends StatefulWidget> extends SupabaseAuthState<T> {
 
   @override
   void onUnauthenticated() {
-    if (mounted) context.read<AppBloc>().add(AppUnAuthenticatedEvent());
+    if (mounted) {
+      context.read<AppBloc>().add(AppUnAuthenticatedEvent());
+    }
   }
 }
